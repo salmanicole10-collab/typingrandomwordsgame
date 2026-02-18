@@ -8,3 +8,4 @@ mistakes = 0
 total = len(game_words)
 count = 1 
 
+print("Escribe la siguiente palabra y presiona Enter")
