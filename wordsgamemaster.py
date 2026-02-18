@@ -40,5 +40,3 @@ if played > 0:
     print("precisión:", round(accuracy, 2), "%")
 else:
     print("No completaste ninguna palabra.")
-
-    
