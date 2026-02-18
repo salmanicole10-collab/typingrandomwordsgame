@@ -9,3 +9,21 @@ total = len(game_words)
 count = 1 
 
 print("Escribe la siguiente palabra y presiona Enter")
+
+for word in game_words:
+    print("palabra", count, "de", total, ":", word)
+    user = input("tu respuesta: ").strip()
+
+    if user.lower() == "exit":
+        print("juego terminado")
+        break
+
+    if user == word:
+        print("Correcto!")
+    else:
+        print("Incorrecto!")
+        mistakes += 1
+
+    print("Intentos fallidos:", mistakes)
+    print()
+    count += 1
