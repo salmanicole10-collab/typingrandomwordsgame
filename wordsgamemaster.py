@@ -27,3 +27,18 @@ for word in game_words:
     print("Intentos fallidos:", mistakes)
     print()
     count += 1
+
+played = count - 1
+
+if played > 0:
+    correct = played - mistakes
+    accuracy = (correct / played) * 100
+
+    print("juego terminado")
+    print("correctas:", correct)
+    print("incorrectas:", mistakes)
+    print("precisión:", round(accuracy, 2), "%")
+else:
+    print("No completaste ninguna palabra.")
+
+    
